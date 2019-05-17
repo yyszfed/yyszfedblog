@@ -9,7 +9,7 @@ menu:
   Links: links  # 友链
   About: about  # 关于
   Nav: nav #导航
-  Urlset: urlset #导航
+  # Urlset: urlset #导航
 
 # Enable/Disable menu icons
 menu_icons:
@@ -107,13 +107,13 @@ share:
 
 # Github
 github:
-  username: wangzhikui  # github username
+  username: yyszfed  # github username
 
 # Comment
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: #gitalk  # 启用哪种评论系统
+  type: valine  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan:
     uid:  # enter youyan uid
@@ -125,9 +125,15 @@ comment:
     ClientID:
     ClientSecret:
     lazy: false
+  gitalk: # gitalk. https://gitalk.github.io/
+    owner: wangzhikui #必须. GitHub repository 所有者，可以是个人或者组织。
+    admin: wangzhikui #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
+    repo: yyszfed.github.io #必须. GitHub repository.
+    ClientID:  #必须. GitHub Application Client ID.
+    ClientSecret:  #必须. GitHub Application Client Secret.
   valine: # Valine. https://valine.js.org
-    appid:  # your leancloud application appid
-    appkey:  # your leancloud application appkey
+    appid: 60SzcpSSN4tbvpP1cxqHVC3g-gzGzoHsz # your leancloud application appid
+    appkey: x6Kfdwnw6QYX1tP4Yfawd3I3  # your leancloud application appkey
     notify: false # mail notifier , https://github.com/xCss/Valine/wiki
     verify: false # Verification code
     placeholder: Just go go # comment box placeholder
@@ -147,8 +153,8 @@ pv:
     enable: false  # 不蒜子统计
   leancloud:
     enable: true  # leancloud统计
-    app_id: GV7WreiwIzOal3QAJs1iIswO-gzGzoHsz # leancloud <AppID>
-    app_key: rd3OL3MOgjCqQJwTj85j4Auv # leancloud <AppKey>
+    app_id: 60SzcpSSN4tbvpP1cxqHVC3g-gzGzoHsz # leancloud <AppID>
+    app_key: x6Kfdwnw6QYX1tP4Yfawd3I3 # leancloud <AppKey>
 
 # wordcount
 postCount:
@@ -175,7 +181,7 @@ profile:
   avatar: images/avatar.png
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 用友深圳FED
-  author_title: 程序员
+  author_title: 
   author_description: 
   location: 深圳, 中国
   follow: http://www.yyszfed.com/images/avatar.png
